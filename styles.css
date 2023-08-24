@@ -1,0 +1,55 @@
+* {
+    font-family: 'Changa', sans-serif;
+    font-size: 22px;
+}
+body {
+    background-color: black;
+    cursor: wait;
+}
+.main {
+    position: relative;
+}
+.boot {
+    color: white;
+    position: absolute;
+}
+.boot3 {
+    color: transparent;
+    animation-name: slide;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.boot2 {
+    color: transparent;
+    animation-name: slide;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+        color: white;
+    }
+    100% {
+        transform: translateY(1%);
+        color: white;
+    }
+}
+.boot span {
+    width: 1.5rem;
+    position: fixed;
+    height: 1rem;
+    margin-left: 1rem;
+    border-bottom: 0.5rem solid white;
+    animation: cursor 0.4s infinite;
+}
+@keyframes cursor {
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: transparent;
+    }
+}
